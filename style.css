@@ -14,25 +14,40 @@ a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 }
-.section1__btn {
+.model-s__btn {
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-weight: bold;
 }
-.section2__btn {
+.cockpit__btn {
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-weight: bold;
 }
-.section3__btn {
+.frame__btn {
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-weight: bold;
 }
-.section3__item {
+.frame__item {
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-weight: bold;
 }
+@media only screen and (min-width: 375px) and (max-width: 767px){
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+}
+
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+
 
 
