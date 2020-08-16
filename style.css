@@ -17,7 +17,7 @@ p {
 	font-weight: 500;
 }
 /*body {
-	background-color: red;
+	background-color: green;
 }*/
 a {
 	font-family: 'Montserrat', sans-serif;
@@ -59,35 +59,35 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 30px;
-	width: 30px;
+	height: 15px;
+	width: 24px;
 	cursor: pointer;
 }
 .heading__burger {
-	width: 30px;
-	height: 3px;
+	width: 24px;
+	height: 2px;
 	background-color: #E51937;
 	position: relative;
 }
 .heading__burger::before {
 	content: '';
 	display: block;
-	width: 30px;
-	height: 3px;
+	width: 24px;
+	height: 2px;
 	background-color: #E51937;
 	position: absolute;
 	left:0;
-	top: -10px;
+	top: -7px;
 }
 .heading__burger::after {
 	content: '';
 	display: block;
-	width: 30px;
-	height: 3px;
+	width: 24px;
+	height: 2px;
 	background-color: #E51937;
 	position: absolute;
 	left:0;
-	top: 10px;
+	top: 7px;
 }
 .main {
 	min-height: 150px;
@@ -216,17 +216,6 @@ a {
 		height: 15px;
 		width: 24px;
 	}
-	.heading__burger {
-		width: 24px;
-	}
-	.heading__burger::before {
-		width: 24px;
-		top: -7px;
-	}
-	.heading__burger::after {
-		width: 24px;
-		top: 7px;
-	}
 	.main {
 		padding-top: 49px;
 	}
@@ -271,9 +260,9 @@ a {
 		padding-top: 20px;
 		width: 78%;
 		margin-bottom: 11px;
-/* оч интересный вид смена цвета у кнопки и тест драйв */
 	}
 	.cockpit__img {
+		background-size: cover;
 		width: 619px;
 		height: 337px;
 		background: url(img/tesla_cockpit.png);
@@ -368,10 +357,28 @@ a {
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 	.heading {
 		padding-left: 15px;
-		padding-right: 187px;	
+		padding-right: 59px;	
 	}
 	.heading__nav {
 		display: none;
+	}
+	.heading__icon {
+		width: 35px;
+		height: 22px;
+	}
+	.heading__burger {
+		width: 35px;
+		
+	}
+	.heading__burger::before {
+		width: 35px;
+		top: -10px;
+		
+	}
+	.heading__burger::after {
+		width: 35px;
+		top: 10px;
+		
 	}
 	.model-s__img1 {
 		padding-left: 16px;
@@ -380,6 +387,7 @@ a {
 		height: 271px;
 	}
 	.model-s__img2 {
+		margin-left: -20px;
 		margin-top: -162px;
 		width: 672px;
 		height: 327px;
@@ -388,20 +396,18 @@ a {
 	.model-s__img3 {
 		width: 200px;
 		height: 83px;
+		margin-bottom: 55px; /* думаю не то что надо */
 	}
 	.model-s__img4 {
+		margin-bottom: 55px; /* думаю не то что надо */
 		width: 220px;
 		height: 80px;
-		margin-right: 60px;
+		margin-right: 69px;
 	}
-	.model-s__img5 {
+	.model-s__img6 {
+		margin-right: 36px;
 		width: 162px;
 		height: 30px;
-	}
-	
-	.cockpit__img1 {
-		width: 918px;
-		height: 500px;	
 	}
 	.model-s__title {
 		font-size: 90px;
@@ -417,17 +423,26 @@ a {
 		width: 220px;
 		height: 55px;
 	}
-	.model-s__aside {
+	.model-s__aside { /* не так как надо */
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		display: flex;
 		height: auto;
 		width: 64%;
-		margin-bottom: 40px;
-	/* оч интересный вид!!!! смена цвета у кнопки и тест драйв  */	
+		margin-bottom: 42px;
+	}
+	.model-s__img5 {
+		display: none;
 	}
 	.cockpit__img {
-		width: 918px;
-		height: 500px;	
+		width: 769px;
+    	height: 567px;
+		/*  width: 918px;
+		height: 500px;	это размер картинки из макета */
 		background: url(img/tesla_cockpit.png);
 		overflow: hidden;
+		background-size: cover;
 	}
 	.cockpit__txt {
 		margin-top: -4px;
@@ -443,8 +458,8 @@ a {
 		padding-top: 20px;
 	}
 	.cockpit__subtitle {
-		margin-bottom: 22px;
-		padding-top: 5px;
+		margin-bottom: 20px;
+		padding-top: 3px;
 	}
 	.cockpit__caption {
 		padding-bottom: 20px;
@@ -453,18 +468,20 @@ a {
 		padding-right: 9px;
 	}
 	.cockpit__icons {
-		padding-top: 4px;
-		padding-left: 22px;
+		padding-top: 3px;
+    	padding-left: 23px;
 		width: 40%;
 	}
 	.cockpit__title {
+		padding-top: 64px;
+    	padding-right: 47px;
 		float: right;
 		font-size: 70px;
 		line-height: 85px;
 		color: #E51937;	
 	}
 	.cockpit__img2 {
-		margin-bottom: 15px;
+		margin-bottom: 18px;
 		width: 187px;
 		height: 65px;
 	}
@@ -496,10 +513,13 @@ a {
 	}
 	.frame__titleandtext {
 		height: auto;
-		padding: 20px 0 20px;
+		padding: 23px 0 20px ;
 		display: inline-flex;
 		justify-content: space-around;
-		margin-bottom: 20px;
+		margin-bottom: 41px;
+	}
+	.frame__aside {
+		margin-bottom: 31px;
 	}
 	.frame__title {
 		padding-right: 5px;
@@ -508,15 +528,16 @@ a {
 		width: 44%;
 	}
 	.frame__title2 {
-		margin-bottom: 15px;
+		margin-bottom: 13px;
 	}
 	.frame__table {
 		height: auto;
 		padding-top: 11px;
-		width: 40%;
+		width: 42%;
 	}
 	.frame__subtitle {
 		margin-bottom: 19px;
+		padding-left: 6px;
 	}
 	.frame__link {
 		margin-right: 34px;
@@ -535,7 +556,7 @@ a {
 		height: 423px;
 	}
 	.frame__img {
-		margin-bottom: 34px;
+		margin-bottom: 60px;
 	}
 	.frame__title1 {
 		padding-top: 34px;
@@ -545,33 +566,55 @@ a {
 		opacity: 0.1;
 	}
 	.frame__img2 {
-		margin-top: -105px;
+		margin-left: -57px;
+		margin-top: -127px;
 		width: 750px;
 		height: 386px;
+	}
+	.frame__line {
+		line-height: 24px;
 	}
 
 }
 
 
 @media only screen and (min-width: 1025px) {
+	a {
+		font-size: 13px;
+		line-height: 16px;
+	}
 	.heading {
+		height: 93px;
 		padding-left: 42px;
-		padding-right: 93px;
+		padding-right: 97px;
+	}
+	.heading__right {
+		display: inline-flex;
+		width: auto;
+	}
+	.heading__nav {
+		width: auto;
+
 	}
 	.heading__nav li {
 		display: inline;
 	}
+	.heading__icon {
+		 padding-top: 23px;
+	}
 	.heading__items {
-		padding-left: 0; 
+		padding-left: 57px;
 	}
 	.heading__item {
-		list-style-type: none;
+		line-height: 18px;
+		margin-right: 29px;
+		height: 26px;
 	}
 	.heading__link {
 		display: inline-flex;
-		height: 26px;
 		color: #000000;
-		margin-right: 10px;
+		font-size: 15px;
+		list-style-type: none;
 	}
 	.heading__link:hover {
 		color: #E51937;
@@ -589,12 +632,12 @@ a {
 		height: 467px;	
 	}
 	.model-s__img2 {
+		margin-left: -75px;
 		margin-top: -317px;
 		width: 968px;
 		height: 450px;
 		margin-bottom: 16px;
 	}
-	
 	.model-s__title {
 		margin-bottom: -10px;
 		font-size: 90px;
@@ -626,53 +669,62 @@ a {
 		height: 56px;
 		margin-right: 74px;
 	}
+	.model-s__img6 {
+		display: none;
+	}
 	.model-s__link1 {
 		width: 124px;
 		height: 22px;
 		margin-right: 37px;
 	}
 	.cockpit {
-		padding-top: 30px;
+		padding-top: 33px;
 		height: auto;
 		display: inline-flex;
 	}
 	.cockpit__img1 {
 		width: 1548px;
-		height: 844px; /* а может и не фон */
+		height: 844px; 
 	}
 	.cockpit__img {
+		margin-top: 53px;
 		height: 844px;
 		background: url(img/tesla_cockpit.png);
-		width: 70%;
-		
+		width: 70%;	
 	}
 	.cockpit__txt {
-		width: 30%;
+		justify-content: space-between;
+		width: 31%;
 		margin-left: -3px;
-		padding: 30px 20px 30px 33px;
+		padding: 39px 20px 30px 39px;
 		flex-direction: column;	
 	}
+	.cockpit__aside {
+		margin-bottom: 30px;
+		padding-right: 27px;
+    	padding-left: 16px;
+	}
 	.cockpit__textandtitle {
-		margin-bottom: 40px;
+		display: flex;
 		height: auto;
 		flex-direction: column;
 	}
 	.cockpit__caption {
-		padding: 24px 29px 20px 14px;
+		padding: 12px 38px 15px 19px;
 		height: auto;
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 	}
 	.cockpit__subtitle {
 		margin-bottom: 14px;
 	}
 	.cockpit__icons {
-		padding-left: 14px;
+		padding-left: 17px;
     	padding-top: 18px;
 		flex-direction: column;
 	}
 	.cockpit__title {
-		padding-top: 71px;
-    	padding-left: 78px;
+		padding-top: 13px;
+    	padding-left: 80px;
 		font-size: 70px;
 		line-height: 85px;
 		color: #E51937;
@@ -687,7 +739,7 @@ a {
 		height: 65px;
 	}
 	.cockpit__img3 {
-		margin-bottom: 23px;
+		margin-bottom: 21px;
 		width: 269px;
 		height: 71px;
 	}
@@ -696,17 +748,21 @@ a {
 		height: 71px;
 	}
 	.cockpit__btn {
-		width: 160px;
+		width: 163px;
 		height: 40px;
 	}
 	.cockpit__link {
-		width: 201.7px;
-		height: 31.18px;
+		width: 201px;
+		height: 31px;
 	}
 	.frame {
 		margin-top: -4px;
 		display: inline-flex;
 		flex-direction: row-reverse;
+	}
+	.frame__img {
+		height: auto;
+		width: 70%;	
 	}
 	.frame__txt {
 		width: 30%;
@@ -714,12 +770,13 @@ a {
 		flex-direction: column;
 	}
 	.frame__titleandtext {
-		margin-bottom: 80px;
-		padding-top: 21px;
+		margin-bottom: 70px;
+		padding-top: 23px;
     	padding-left: 22px;
 		height: auto;
 	}
 	.frame__title {
+		padding-right: 32px;
 		height: auto;
 		margin-bottom: 53px;
 	}
@@ -731,16 +788,19 @@ a {
 		height: 40px;
 	}
 	.frame__img3 {
-		margin-bottom: 52px;
-		padding-left: 34px;
+		margin-bottom: 47px;
+		margin-left: 33px;
 		width: 280px;
 		height: 92px;
 	}
 	.frame__img2 {
+		margin-top: -149px;
+    	margin-left: -128px;
 		width: 1049px;
 		height: 592px;
 	}
 	.frame__title1 {
+		padding-top: 84px;
 		font-size: 200px;
 		line-height: 244px;
 		color: #E51937;
@@ -750,14 +810,27 @@ a {
 		margin-bottom: 20px;
 	}
 	.frame__subtitle {
-		margin-bottom: 19px;
+		padding-top: 8px;
+		margin-bottom: 13px;
 	}
 	.frame__table {
 		height: auto;
 		margin-bottom: 30px;
 	}
+	.frame__line {
+		line-height: 24px;
+	}
+	.frame-list {
+		height: auto;
+	}
 	.frame__link {
-		margin-bottom: 24px;
+		width: 201px;
+		height: 31px;
+	}
+	.frame__aside {
+		margin-bottom: 30px;
+		padding-right: 30px;
+		padding-left: 6px;
 	}
 }
 
