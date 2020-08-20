@@ -1,0 +1,839 @@
+* {
+	box-sizing: border-box;
+}
+body, h1, h2, p, a {
+	margin: 0;
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+/*body {
+	background-color: green;
+}*/
+a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+	cursor: pointer;
+}
+.model-s__btn {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+}
+.cockpit__btn {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+}
+.frame__btn {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+}
+.frame__item {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+}
+.heading {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	top: 0;
+	left: 0;
+	height: 103px;
+	align-items: center;
+	justify-content: space-between;
+}
+.heading__icon {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 15px;
+	width: 24px;
+	cursor: pointer;
+}
+.heading__burger {
+	width: 24px;
+	height: 2px;
+	background-color: #E51937;
+	position: relative;
+}
+.heading__burger::before {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 2px;
+	background-color: #E51937;
+	position: absolute;
+	left:0;
+	top: -7px;
+}
+.heading__burger::after {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 2px;
+	background-color: #E51937;
+	position: absolute;
+	left:0;
+	top: 7px;
+}
+.main {
+	min-height: 150px;
+	padding-top: 103px;
+}
+.model-s {
+	height: auto;
+	padding-top: 51px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.model-s__btn {
+	display: flex;
+	color: #E51937;
+	border: 2px solid #E51937;
+	align-items: center;
+  	justify-content: center;
+}
+.model-s__btn:hover {
+	color: white;
+	background-color: #E51937;
+}
+.cockpit__btn {
+	display: flex;
+	color: white;
+	border: 3px solid white;
+	align-items: center;
+  	justify-content: center;
+}
+.cockpit__btn:hover {
+	color: #E51937;
+	background-color: white;
+}
+.cockpit__link:hover {
+	opacity: 0.4;
+}
+.frame__btn {
+	display: flex;
+	color: white;
+	border: 2px solid white;
+	align-items: center;
+  	justify-content: center;
+}
+.frame__btn:hover {
+	color: #E51937;
+	background-color: white;
+}
+.frame__link:hover {
+	opacity: 0.4;
+}
+
+.cockpit__txt {
+	display: flex;
+	background-color: #E51937;
+}
+.cockpit__subtitle {
+	color: #FFFFFF;
+	font-size: 30px;
+	line-height: 37px;
+}
+.cockpit__text {
+	color: #FFFFFF;
+	font-size: 15px;
+	line-height: 18px;
+}
+.cockpit__aside {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.frame__txt {
+	display: flex;
+	background-color: #E51937;
+}
+.frame__title2 {
+	color: #FFFFFF;
+	font-size: 30px;
+	line-height: 37px;
+}
+.frame__text {
+	color: #FFFFFF;
+	font-size: 15px;
+	line-height: 18px;
+}
+.frame__subtitle {
+	color: #FFFFFF;
+	font-size: 30px;
+	line-height: 37px;
+}
+.frame__item {
+	color: #FFFFFF;
+	font-size: 17px;
+	line-height: 21px;
+	list-style-type: none;
+}
+.frame__img1 {
+	width: 25px;
+	height: 25px;
+}
+.frame__aside {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.frame__img {
+	text-align: center;
+
+}
+
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+	.heading {
+		padding-right: 52px;
+	}
+	.heading__nav {
+		display: none;
+	}
+	.heading__logo {
+		width: 138px;
+		height: 42px;
+	}
+	.heading__icon {
+		height: 15px;
+		width: 24px;
+	}
+	.main {
+		padding-top: 49px;
+	}
+	.model-s__title {
+		margin-bottom: -3px;
+	}
+	.model-s__subtitle {
+		margin-bottom: 8px;
+	}
+	.model-s__img1 {
+		width: 448px;
+		height: 139px;
+	}
+	.model-s__img2 {
+		margin-top: -97px;
+		width: 357px;
+		height: 166px;
+	}
+	.model-s__img4 {
+		width: 134px;
+		height: 53px;
+		margin-right: 28px;
+	}
+	.model-s__img3 {
+		width: 115px;
+		height: 53px;
+		margin-right: 13px;
+	}
+	.model-s__title {
+		font-size: 50px;
+		line-height: 61px;
+	}
+	.model-s__subtitle {
+		font-size: 10px;
+		line-height: 12px;
+	}
+	.model-s__btn {
+		width: 160px;
+		height: 40px;	
+	}
+	.model-s__aside {
+		padding-top: 20px;
+		width: 78%;
+		margin-bottom: 11px;
+	}
+	.cockpit__img {
+		background-size: cover;
+		width: 619px;
+		height: 337px;
+		background: url(img/tesla_cockpit.png);
+		overflow: hidden;
+	}
+	.cockpit__img1 {
+		width: 619px;
+		height: 337px;
+	}
+	.cockpit__img1 {
+		width: 619px;
+		height: 337px;	
+	}
+	.cockpit__txt {
+		margin-top: -4px;
+		padding: 18px;
+	}
+	.cockpit__textandtitle {
+		height: auto;
+	}
+	.cockpit__subtitle {
+		padding-left: 3px;
+		margin-bottom: 10px;
+	}
+	.cockpit__caption {
+		padding-left: 7px;
+		padding-bottom: 19px;
+	}
+	.cockpit__title {
+		display: none;
+	}
+	.cockpit__img2 {
+		display: none;
+	}
+	.cockpit__img3 {
+		display: none;
+	}
+	.cockpit__img4 {
+		display: none;
+	}
+	.cockpit__aside {
+		display: none;
+	}
+	.frame__txt {
+		padding: 20px;
+		height: auto;
+	}
+	.frame__title {
+		padding-left: 5px;
+		height: auto;
+		padding-bottom: 50px;
+	}
+	.frame__title2 {
+		padding-left: 3px;
+		margin-bottom: 11px;
+	}
+	.frame__text {
+		padding-left: 5px;
+	}
+	.frame__aside {
+		display: none;
+	}
+	.frame__img3 {
+		display: none;
+	}
+	.frame__subtitle {
+		display: none;
+	}
+	.frame__list {
+		display: none;
+	}
+	.frame__img6 {
+		width: 361px;
+		height: 204px;
+	}
+	.frame__title1 {
+/* надо обрезать как-то заголовок */
+
+		font-size: 100px;
+		line-height: 122px;
+		color: #E51937;
+		opacity: 0.1;
+	}
+	.frame__img2 {
+		width: 361px;
+		height: 186px;
+	}
+	
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	.heading {
+		padding-left: 15px;
+		padding-right: 59px;	
+	}
+	.heading__nav {
+		display: none;
+	}
+	.heading__icon {
+		width: 35px;
+		height: 22px;
+	}
+	.heading__burger {
+		width: 35px;
+		
+	}
+	.heading__burger::before {
+		width: 35px;
+		top: -10px;
+		
+	}
+	.heading__burger::after {
+		width: 35px;
+		top: 10px;
+		
+	}
+	.model-s__img1 {
+		padding-left: 16px;
+		margin-top: -22px;
+		width: 821px;
+		height: 271px;
+	}
+	.model-s__img2 {
+		margin-left: -20px;
+		margin-top: -162px;
+		width: 672px;
+		height: 327px;
+		margin-bottom: 36px;
+	}
+	.model-s__img3 {
+		width: 200px;
+		height: 83px;
+		margin-bottom: 55px; /* думаю не то что надо */
+	}
+	.model-s__img4 {
+		margin-bottom: 55px; /* думаю не то что надо */
+		width: 220px;
+		height: 80px;
+		margin-right: 69px;
+	}
+	.model-s__img6 {
+		margin-right: 36px;
+		width: 162px;
+		height: 30px;
+	}
+	.model-s__title {
+		font-size: 90px;
+		line-height: 110px;
+	}
+	.model-s__subtitle {
+		margin-top: -8px;
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.model-s__btn {
+		margin-bottom: 20px;
+		width: 220px;
+		height: 55px;
+	}
+	.model-s__aside { /* не так как надо */
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		height: auto;
+		width: 64%;
+		margin-bottom: 42px;
+	}
+	.model-s__img5 {
+		display: none;
+	}
+	.cockpit__img {
+		width: 769px;
+    	height: 567px;
+		/*  width: 918px;
+		height: 500px;	это размер картинки из макета */
+		background: url(img/tesla_cockpit.png);
+		overflow: hidden;
+		background-size: cover;
+	}
+	.cockpit__txt {
+		margin-top: -4px;
+		display: flex;
+		padding: 30px 10px 28px 8px;
+		flex-direction: column;
+	}
+	.cockpit__textandtitle {
+		display: inline-flex;
+		justify-content: space-around;
+		margin-bottom: 20px;
+		height: auto;
+		padding-top: 20px;
+	}
+	.cockpit__subtitle {
+		margin-bottom: 20px;
+		padding-top: 3px;
+	}
+	.cockpit__caption {
+		padding-bottom: 20px;
+		height: auto;
+		width: 46%;
+		padding-right: 9px;
+	}
+	.cockpit__icons {
+		padding-top: 3px;
+    	padding-left: 23px;
+		width: 40%;
+	}
+	.cockpit__title {
+		padding-top: 64px;
+    	padding-right: 47px;
+		float: right;
+		font-size: 70px;
+		line-height: 85px;
+		color: #E51937;	
+	}
+	.cockpit__img2 {
+		margin-bottom: 18px;
+		width: 187px;
+		height: 65px;
+	}
+	.cockpit__img3 {
+		margin-bottom: 17px;
+		width: 205px;
+		height: 71px;
+	}
+	.cockpit__img4 {
+		width: 202px;
+		height: 71px;
+	}
+	.cockpit__aside {
+		padding-top: 28px;
+	}
+	.cockpit__btn {
+		width: 220px;
+		height: 55px;
+	}
+	.cockpit__link {
+		margin-right: 34px;
+		width: 201px;
+		height: 31px;
+	}
+	.frame__txt {
+		height: auto;
+		flex-direction: column;
+		padding: 30px 10px 28px 8px;
+	}
+	.frame__titleandtext {
+		height: auto;
+		padding: 23px 0 20px ;
+		display: inline-flex;
+		justify-content: space-around;
+		margin-bottom: 41px;
+	}
+	.frame__aside {
+		margin-bottom: 31px;
+	}
+	.frame__title {
+		padding-right: 5px;
+		padding-top: 9px;
+		height: auto;
+		width: 44%;
+	}
+	.frame__title2 {
+		margin-bottom: 13px;
+	}
+	.frame__table {
+		height: auto;
+		padding-top: 11px;
+		width: 42%;
+	}
+	.frame__subtitle {
+		margin-bottom: 19px;
+		padding-left: 6px;
+	}
+	.frame__link {
+		margin-right: 34px;
+		width: 201px;
+		height: 31px;
+	}
+	.frame__btn {
+		width: 220px;
+		height: 55px;
+	}
+	.frame__img3 {
+		display: none;
+	}
+	.frame__img6 {
+		width: 750px;
+		height: 423px;
+	}
+	.frame__img {
+		margin-bottom: 60px;
+	}
+	.frame__title1 {
+		padding-top: 34px;
+		font-size: 148px;
+		line-height: 180px;
+		color: #E51937;
+		opacity: 0.1;
+	}
+	.frame__img2 {
+		margin-left: -57px;
+		margin-top: -127px;
+		width: 750px;
+		height: 386px;
+	}
+	.frame__line {
+		line-height: 24px;
+	}
+
+}
+
+
+@media only screen and (min-width: 1025px) {
+	a {
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.heading {
+		height: 93px;
+		padding-left: 42px;
+		padding-right: 97px;
+	}
+	.heading__right {
+		display: inline-flex;
+		width: auto;
+	}
+	.heading__nav {
+		width: auto;
+
+	}
+	.heading__nav li {
+		display: inline;
+	}
+	.heading__icon {
+		 padding-top: 23px;
+	}
+	.heading__items {
+		padding-left: 57px;
+	}
+	.heading__item {
+		line-height: 18px;
+		margin-right: 29px;
+		height: 26px;
+	}
+	.heading__link {
+		display: inline-flex;
+		color: #000000;
+		font-size: 15px;
+		list-style-type: none;
+	}
+	.heading__link:hover {
+		color: #E51937;
+		border-bottom: 2px solid #E51937;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+	.main {
+		padding-top: 84px;
+	}
+	.model-s__img1 {
+		padding-left: 27px;
+		margin-top: -116px;
+		width: 1514px;
+		height: 467px;	
+	}
+	.model-s__img2 {
+		margin-left: -75px;
+		margin-top: -317px;
+		width: 968px;
+		height: 450px;
+		margin-bottom: 16px;
+	}
+	.model-s__title {
+		margin-bottom: -10px;
+		font-size: 90px;
+		line-height: 110px;
+	}
+	.model-s__subtitle {
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.model-s__btn {
+		width: 160px;
+		height: 40px;
+	}
+	.model-s__aside {
+		margin-bottom: 29px;
+		width: 58%;
+		height: auto;
+		display: flex;
+		align-items: center;
+		padding-left: 10px;
+	}
+	.model-s__img3 {
+		width: 147px;
+		height: 63px;
+		margin-right: 98px;
+	}
+	.model-s__img4 {
+		width: 165px;
+		height: 56px;
+		margin-right: 74px;
+	}
+	.model-s__img6 {
+		display: none;
+	}
+	.model-s__link1 {
+		width: 124px;
+		height: 22px;
+		margin-right: 37px;
+	}
+	.cockpit {
+		padding-top: 33px;
+		height: auto;
+		display: inline-flex;
+	}
+	.cockpit__img1 {
+		width: 1548px;
+		height: 844px; 
+	}
+	.cockpit__img {
+		margin-top: 53px;
+		height: 844px;
+		background: url(img/tesla_cockpit.png);
+		width: 70%;	
+	}
+	.cockpit__txt {
+		justify-content: space-between;
+		width: 31%;
+		margin-left: -3px;
+		padding: 39px 20px 30px 39px;
+		flex-direction: column;	
+	}
+	.cockpit__aside {
+		margin-bottom: 30px;
+		padding-right: 27px;
+    	padding-left: 16px;
+	}
+	.cockpit__textandtitle {
+		display: flex;
+		height: auto;
+		flex-direction: column;
+	}
+	.cockpit__caption {
+		padding: 12px 38px 15px 19px;
+		height: auto;
+		margin-bottom: 25px;
+	}
+	.cockpit__subtitle {
+		margin-bottom: 14px;
+	}
+	.cockpit__icons {
+		padding-left: 17px;
+    	padding-top: 18px;
+		flex-direction: column;
+	}
+	.cockpit__title {
+		padding-top: 13px;
+    	padding-left: 80px;
+		font-size: 70px;
+		line-height: 85px;
+		color: #E51937;
+	}
+	.cockpit__img1 {
+		width: 1548px;
+		height: 844px;
+	}
+	.cockpit__img2 {
+		margin-bottom: 33px;
+		width: 187px;
+		height: 65px;
+	}
+	.cockpit__img3 {
+		margin-bottom: 21px;
+		width: 269px;
+		height: 71px;
+	}
+	.cockpit__img4 {
+		width: 202px;
+		height: 71px;
+	}
+	.cockpit__btn {
+		width: 163px;
+		height: 40px;
+	}
+	.cockpit__link {
+		width: 201px;
+		height: 31px;
+	}
+	.frame {
+		margin-top: -4px;
+		display: inline-flex;
+		flex-direction: row-reverse;
+	}
+	.frame__img {
+		height: auto;
+		width: 70%;	
+	}
+	.frame__txt {
+		width: 30%;
+		padding: 30px 20px 30px 33px;
+		flex-direction: column;
+	}
+	.frame__titleandtext {
+		margin-bottom: 70px;
+		padding-top: 23px;
+    	padding-left: 22px;
+		height: auto;
+	}
+	.frame__title {
+		padding-right: 32px;
+		height: auto;
+		margin-bottom: 53px;
+	}
+	.frame__title2 {
+		margin-bottom: 15px;
+	}
+	.frame__btn {
+		width: 160px;
+		height: 40px;
+	}
+	.frame__img3 {
+		margin-bottom: 47px;
+		margin-left: 33px;
+		width: 280px;
+		height: 92px;
+	}
+	.frame__img2 {
+		margin-top: -149px;
+    	margin-left: -128px;
+		width: 1049px;
+		height: 592px;
+	}
+	.frame__title1 {
+		padding-top: 84px;
+		font-size: 200px;
+		line-height: 244px;
+		color: #E51937;
+		opacity: 0.1;
+	}
+	.frame__text {
+		margin-bottom: 20px;
+	}
+	.frame__subtitle {
+		padding-top: 8px;
+		margin-bottom: 13px;
+	}
+	.frame__table {
+		height: auto;
+		margin-bottom: 30px;
+	}
+	.frame__line {
+		line-height: 24px;
+	}
+	.frame-list {
+		height: auto;
+	}
+	.frame__link {
+		width: 201px;
+		height: 31px;
+	}
+	.frame__aside {
+		margin-bottom: 30px;
+		padding-right: 30px;
+		padding-left: 6px;
+	}
+}
+
+
+
+
